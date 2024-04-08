@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Disney Website </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <a href="https://www.disney.in/" class="logo">Disney</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="https://www.google.com/aclk?sa=l&ai=DChcSEwikuO2Upqb9AhVMNXIKHc5wBl0YABAAGgJzZg&sig=AOD64_3bGjBqLWQpAF5hyaeZKhkrs0a1hQ&q&adurl&ved=2ahUKEwitneiUpqb9AhW_XWwGHQ2QDPoQ0Qx6BAgKEAE">Products</a></li>
+                
+            </ul>
+        </header>
+        <section>
+            <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/61C377B14F25252D8A112D23A89A78516435DCF60F1C151854DE3D91C755A11A/scale?width=2880&aspectRatio=1.78&format=jpeg">
+            
+            
+            <a href="https://thewaltdisneycompany.com/" id="btn">Explore</a>
+
+            
+        </section>
+       
+
+        
+        
+        <div class="sec">
+            <h2>The Walt Disney</h2>
+            <p><b>The Walt Disney Company</b>, commonly known as <b><u>Disney</u></b> is an American multinational, mass media and entertainment conglomerate that is headquartered at the Walt Disney Studios complex in Burbank, California. Disney was founded on October 16, 1923, by brothers Walt and Roy O. Disney as Disney Brothers Studio; it also operated under the names Walt Disney Studio and Walt Disney Productions before changing its name to The Walt Disney Company in 1986. Early in its existence, the company established itself as a leader in the animation industry, with the creation of the widely popular character Mickey Mouse, who first appeared in Steamboat Willie, which used synchronized sound, to become the first post-produced sound cartoon.</p>
+
+<!--Vision-->
+
+
+<h2 id="vision">Disney’s Corporate Vision.</h2>
+
+
+<p>The Walt Disney Company’s corporate vision is “to be one of the world’s leading producers and providers of entertainment and information.” This vision statement shows industry leadership as a target for strategic management, and provides an overview of the nature of the business. Disney’s corporate vision statement has the following main factors:
+<ol style="margin-left: 50px;">
+<li>World market</li>
+<li>Leadership as a producer and provider</li>
+<li>Entertainment and information</li>
+</ol>
+</p>
+<p>This corporate vision statement’s first factor is a specification of the entertainment company’s global market scope. On the other hand, similar to the corporate mission statement, the second factor of the vision statement shows that The Walt Disney Company focuses on being a top player in the global market for amusement parks, entertainment, and mass media products. Attainment of this goal requires effective competitive advantages and management to address the level of competition determined in the Porter’s Five Forces analysis of Disney. The company needs to strategically develop competitive products that suit new trends in the media industry. In addition, the third factor of the corporate vision focuses on the types of business outputs, such as entertainment products like movies and TV series. Therefore, Disney’s corporate vision statement is a reflection of the corporate mission statement.</p>
+
+
+</section>
+
+
+            
+
+</section>
+
+        </div>
+
+        <script>
+            let text = document.getElementById('text');
+            let bird1 = document.getElementById('bird1');
+            let bird2 = document.getElementById('bird2');
+            let btn = document.getElementById('btn');
+            let rocks = document.getElementById('rocks');
+            let forest = document.getElementById('forest');
+            let water = document.getElementById('water');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value= window.scrollY
+
+                text.style.top = 50 + value * -0.5 + '%';
+                bird1.style.top = value * -1.5 + 'px';
+                bird1.style.left = value * 2 + 'px';
+                bird2.style.top = value * -1.5 + 'px';
+                bird2.style.left = value * -5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                rocks.style.top = value * -0.12 + 'px';
+                forest.style.top = value * 0.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+
+        </script>
+    </body>
+</html>
